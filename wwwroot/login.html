@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>3DNet | Login</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a style="padding-left:10px" href="/" class="brand-logo">3DNet</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="login.html"><b>Login</b></a></li>
+                <li><a href="signup.html"><b>Registrati</b></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Accedi</h2>
+        <div class="row">
+            <form class="col s12" id="form">             
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" name="email" type="text" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <button onclick="Send()" class="btn waves-effect waves-light">
+                    Accedi
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

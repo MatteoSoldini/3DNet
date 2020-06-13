@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>3DNet | Home</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a style="padding-left:10px" href="/" class="brand-logo">3DNet</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="login.html"><b>Login</b></a></li>
+                <li><a href="signup.html"><b>Registrati</b></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div style="margin-top: 10px" id="upload" class="row">
+            <div class="col s10">
+                <form>
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>Seleziona</span>
+                            <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col s2">
+                <a onclick="upload()" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">file_upload</i></a>
+            </div>
+        </div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Azioni</th>
+                </tr>
+            </thead>
+
+            <tbody id="content">
+            </tbody>
+        </table>
+    </div>
+    <div class="bg"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
